@@ -130,7 +130,7 @@ int main()
 		cout<<"a) Pedir ayuda \nb) Revisar que no haya nadie en la casa \nc) Intentar salir \nd) Despertar(opcion para salir del juego)"<<endl;
 		cin>> desA;	
 		switch(desA){
-		while(desA!='a', 'b', 'c', 'd'){	
+	 	while(desA!='a', 'b', 'c', 'd'){	
 		
 			case 'a':{
 				system("cls");
@@ -338,7 +338,7 @@ int main()
 			}
 			case 'c':{
 				system("cls");
-				cout<<"No has perdido ninguna vida \n¡Bien! Lo mejor es revisar que no haya y esperar a que no esten para poder actuar siendo cuidadoso/a."<<endl;
+				cout<<"Has perdido una vida \n¡Mal! Es arriesgado esperar a que se vayan, pues puede haber mas de esas personas por alli se cuidadoso/a."<<endl;
 				system("pause");
 				cout<<"Despues de haber esperado a que se vayan te das cuenta que en la cochera de la casa hay una puerta semiabierta que lleva a la salida..:)."<<endl;
 				system("pause");
