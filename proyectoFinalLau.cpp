@@ -3,10 +3,11 @@
 using namespace std;
 int main()
 {
-	char desA='x', desB='y', desC='z', desD='w', desE='v', desBa='u', desBb='t', desBc='s';
+
 	int vidas=5;
 	int op, op2, dif, idiom;
-	
+	char desA, desB, desC, desD, desE, desBa, desBb, desBc;
+		
 	do{
 
 		system("cls");
@@ -106,6 +107,7 @@ int main()
 				}
 			case 4:{
 				system("cls");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
 				cout<<"Chauuu :3"<<endl;
 				return 0;
 				system("pause");
@@ -162,6 +164,8 @@ int main()
 			case 'd':{
 				system("cls");
 				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
 				return 0;
 				system("pause");
 				break;
@@ -184,7 +188,7 @@ int main()
 		cin>> desB;
 		vidas=vidas -1;
 		switch(desB){
-			while(desB!='y'){
+			while(desB!='a', 'b', 'c', 'd'){
 			case 'a':{
 				system("cls");
 				cout<<" No has perdido ninguna vida \n¡Bien! por el momento es mejor esconderte y visualizar tu alrededor, no hace falta actuar imprudentemente."<<endl;
@@ -212,6 +216,8 @@ int main()
 			case 'd':{
 				system("cls");
 				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
 				return 0;
 				system("pause");
 				break;
@@ -259,6 +265,9 @@ int main()
 			case 'd':{
 				system("cls");
 				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+
 				return 0;
 				system("pause");
 				break;
@@ -307,6 +316,9 @@ int main()
 			case 'd':{
 				system("cls");
 				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+
 				return 0;
 				system("pause");
 				break;
@@ -354,6 +366,9 @@ int main()
 			case 'd':{
 				system("cls");
 				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+
 				return 0;
 				system("pause");
 				break;
@@ -410,6 +425,9 @@ int main()
 			case 'd':{
 				system("cls");
 				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+
 				return 0;
 				system("pause");
 				break;
@@ -463,6 +481,9 @@ int main()
 			case 'd':{
 				system("cls");
 				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+
 				return 0;
 				system("pause");
 				break;
@@ -477,6 +498,7 @@ int main()
 	system("cls");
 	}
 	if(desBb=='a' || 'b' || 'c'){
+		vidas=vidas-1;
 		if(vidas==0){
 			cout<<"Te has quedado sin vidas, has muerto..."<<endl;
 			system("pause");
@@ -485,14 +507,15 @@ int main()
 			return 0;
 		}
 		system("cls");
-		cout<<"¿Que haras?..."<< vidas -1 <<" vidas restantes "<<endl;
+		cout<<"¿Que haras?..."<< vidas <<" vidas restantes "<<endl;
 		cout<<"a) Forcejear \nb) uy kieto \nc) Darle una patada en su zona sensible \nd) Despertar(opcion para salir del juego"<<endl;
 		cin>> desBc;
+	
 		switch(desBc){
 		while(desBc='a', 'b', 'c', 'd'){
 			case 'a':{
 				system("cls");
-				cout<<" HAS LOGRADO EMPUJAR AL HOMRE Y HAS LOGRADO ESCAPAR DE LA CASA POR LA PUERTA DE LA COCHERA."<<endl;
+				cout<<" HAS LOGRADO EMPUJAR AL HOMBRE Y HAS LOGRADO ESCAPAR DE LA CASA POR LA PUERTA DE LA COCHERA."<<endl;
 				system("pause");
 				cout<<("FELICIDADES LOGRASTE PASAR EL JUEGO CON VIDA!!!")<<endl;
 				system("pause");
@@ -526,6 +549,9 @@ int main()
 			case 'd':{
 				system("cls");
 				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+
 				return 0;
 				system("pause");
 				break;
@@ -580,6 +606,9 @@ int main()
 			case 'd':{
 				system("cls");
 				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+
 				return 0;
 				system("pause");
 				break;
@@ -594,6 +623,13 @@ int main()
 	system("cls");
 	}
 	if(desC=='c'){
+		if(vidas==0){
+			cout<<"Te has quedado sin vidas, has muerto..."<<endl;
+			system("pause");
+			cout<<"El juego a terminado."<<endl;
+			system("pause");
+			return 0;			
+		}
 		system("cls");
 		cout<<"¿Que haras?..."<< vidas <<" vidas restantes "<<endl;
 		cout<<"a) Correr  \nb) Enfrentarlo \nc) Uy kieto \nd) Despertar(opcion para salir del juego"<<endl;
@@ -627,6 +663,9 @@ int main()
 			case 'd':{
 				system("cls");
 				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+
 				return 0;
 				system("pause");
 				break;
@@ -641,6 +680,13 @@ int main()
 	system("cls");
 	}
 	if(desD=='a'){
+		if(vidas==0){
+			cout<<"Te has quedado sin vidas, has muerto..."<<endl;
+			system("pause");
+			cout<<"El juego a terminado."<<endl;
+			system("pause");
+			return 0;			
+		}
 		system("cls");
 		cout<<"¿Que haras?..."<< vidas <<" vidas restantes "<<endl;
 		cout<<"a) Salir por la puerta \nb) Quedarte \nc) Esconderte \nd) Despertar(opcion para salir del juego"<<endl;
@@ -674,6 +720,9 @@ int main()
 			case 'd':{
 				system("cls");
 				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+
 				return 0;
 				system("pause");
 				break;
@@ -688,6 +737,13 @@ int main()
 	system("cls");
 	}
 	if(desD=='b' || 'c'){
+		if(vidas==0){
+			cout<<"Te has quedado sin vidas, has muerto..."<<endl;
+			system("pause");
+			cout<<"El juego a terminado."<<endl;
+			system("pause");
+			return 0;			
+		}
 		system("cls");
 		cout<<"¿Que haras?..."<< vidas-1 <<" vidas restantes "<<endl;
 		cout<<"a) Forcejear \nb) Quedarte quieto \nc) Darle una patada en su zona sensible \nd) Despertar(opcion para salir del juego"<<endl;
@@ -721,6 +777,9 @@ int main()
 			case 'd':{
 				system("cls");
 				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+
 				return 0;
 				system("pause");
 				break;
@@ -733,11 +792,7 @@ int main()
 		}
 	}
 	system("cls");
-	}	
-		
-
-
-	
+	}
 	cout<<("Fin del juego. ")<<endl;
 	
 	return 0;
