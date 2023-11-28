@@ -124,8 +124,11 @@ int main()
 		cout<<"Iniciando el juego..."<<endl;
 		cout<<"Elige las respuestas que te parezcan correctas"<<endl;
 		system("pause");
+		system("cls");
 		cout<<"Has despertado en una casa desconocida sin ninguna pertenencia contigo \nNi celular ni dinero, absolutamente nada..."<<endl;
+		system("pause");
 		do{	
+		system("cls");
 		cout<<"¿Que haras?..."<< vidas <<" vidas restantes "<<endl;
 		cout<<"a) Pedir ayuda \nb) Revisar que no haya nadie en la casa \nc) Intentar salir \nd) Despertar(opcion para salir del juego)"<<endl;
 		cin>> desA;	
@@ -175,6 +178,7 @@ int main()
 	system("cls");
 	}while(desA!='a', 'b', 'c', 'd');
 	if(desA=='a'){
+		system("cls");
 		cout<<"¿Que haras?..."<< vidas-1 <<" vidas restantes "<<endl;
 		cout<<"a) Esconderte \nb) Correr \nc) Esperar \nd) Despertar(opcion para salir del juego"<<endl;
 		cin>> desB;
@@ -222,6 +226,7 @@ int main()
 	system("cls");		
 	}
 	if(desA=='b'){
+		system("cls");
 		cout<<"¿Que haras?..."<< vidas <<" vidas restantes "<<endl;
 		cout<<"a) Esconderte \nb) Correr \nc) Esperar \nd) Despertar(opcion para salir del juego"<<endl;
 		cin>> desB;
@@ -268,6 +273,7 @@ int main()
 	system("cls");		
 	}
 	if(desA=='c'){
+		system("cls");
 		cout<<"¿Que haras?..."<< vidas-1 <<" vidas restantes "<<endl;
 		cout<<"a) Esconderte \nb) Correr \nc) Esperar \nd) Despertar(opcion para salir del juego"<<endl;
 		cin>> desB;
@@ -315,6 +321,7 @@ int main()
 	system("cls");
 	}
 	if(desB=='a'){
+		system("cls");
 		cout<<"¿Que haras?..."<< vidas  <<" vidas restantes "<<endl;
 		cout<<"a) Buscar otro escondite \nb) Quedarte alli \nc) Esperar a que se vayan \nd) Despertar(opcion para salir del juego"<<endl;
 		cin>> desC;
@@ -369,8 +376,9 @@ int main()
 			system("pause");
 			return 0;
 		}
+		system("cls");
 		cout<<"¿Que haras?..."<< vidas-1 <<" vidas restantes "<<endl;
-		cout<<"a) Dirigirte a la cocina \nb) Dirigirte a la sala \nc) Dirigirte a la cochera \nd) Despertar(opcion para salir del juego"<<endl;
+		cout<<"a) Dirigirte a la cocina \nb) Dirigirte a la sala \nc) Dirigirte a la cochera <- ;) \nd) Despertar(opcion para salir del juego"<<endl;
 		cin>> desBa;
 		vidas = vidas-1;
 		switch(desBa){
@@ -422,6 +430,7 @@ int main()
 			system("pause");
 			return 0;			
 		}
+		system("cls");
 		cout<<"¿Que haras..."<< vidas <<" vidas restantes "<<endl;
 		cout<<"a) Correr sin parar a la puerta \nb) Enfrentar al tipo \nc) Esconderte \nd) Desperta(salir del juego) "<<endl;
 		cin>> desBb;;
@@ -475,7 +484,7 @@ int main()
 			system("pause");
 			return 0;
 		}
-	
+		system("cls");
 		cout<<"¿Que haras?..."<< vidas -1 <<" vidas restantes "<<endl;
 		cout<<"a) Forcejear \nb) uy kieto \nc) Darle una patada en su zona sensible \nd) Despertar(opcion para salir del juego"<<endl;
 		cin>> desBc;
@@ -531,6 +540,14 @@ int main()
 	system("cls");
 	}
 	if(desC=='a' || 'b'){
+		if(vidas==0){
+			cout<<"Te has quedado sin vidas, has muerto..."<<endl;
+			system("pause");
+			cout<<"El juego a terminado."<<endl;
+			system("pause");
+			return 0;			
+		}
+		system("cls");
 		cout<<("¿Que haras?...")<< vidas-1 <<(" vidas restantes ")<<endl;
 		cout<<("a) Correr \nb) Enfrentarlo \nc) Uy kieto \nd) Despertar(opcion para salir del juego")<<endl;
 		cin>> desD;
@@ -577,6 +594,7 @@ int main()
 	system("cls");
 	}
 	if(desC=='c'){
+		system("cls");
 		cout<<"¿Que haras?..."<< vidas <<" vidas restantes "<<endl;
 		cout<<"a) Correr  \nb) Enfrentarlo \nc) Uy kieto \nd) Despertar(opcion para salir del juego"<<endl;
 		cin>> desD;
@@ -623,6 +641,7 @@ int main()
 	system("cls");
 	}
 	if(desD=='a'){
+		system("cls");
 		cout<<"¿Que haras?..."<< vidas <<" vidas restantes "<<endl;
 		cout<<"a) Salir por la puerta \nb) Quedarte \nc) Esconderte \nd) Despertar(opcion para salir del juego"<<endl;
 		cin>> desE;
@@ -669,6 +688,7 @@ int main()
 	system("cls");
 	}
 	if(desD=='b' || 'c'){
+		system("cls");
 		cout<<"¿Que haras?..."<< vidas-1 <<" vidas restantes "<<endl;
 		cout<<"a) Forcejear \nb) Quedarte quieto \nc) Darle una patada en su zona sensible \nd) Despertar(opcion para salir del juego"<<endl;
 		cin>> desE;
